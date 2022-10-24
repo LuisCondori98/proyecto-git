@@ -1,0 +1,86 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    background-color: rgb(73, 197, 139);
+    padding: 10px;
+}
+
+.header__logo {
+    width: 180px;
+    height: 180px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 120%;
+    padding: 7px;
+    background-color: rgb(194, 68, 26);
+}
+
+.navbar__list {
+    display: flex;
+    gap: 40px;
+}
+
+.buscador {
+    border-radius: 5px;
+    font-size: 70%;
+}
+
+.galeria {
+    display: flex;
+    background-size: 100vh;
+}
+
+.navbar__list li a:hover{
+    padding: 4px;
+    background: #fff;
+    color: black;
+    border-radius: 30px;
+}
+
+.contactenos {
+    display: flex;
+    justify-content: space-between
+}
+
+.derechos {
+    display: flex;
+    justify-content: center;
+}
