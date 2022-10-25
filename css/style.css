@@ -106,3 +106,9 @@ footer{
     
     object-fit: cover;
 }
+
+.contenedor__ubicacion {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+}
