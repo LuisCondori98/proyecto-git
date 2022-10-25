@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
@@ -55,7 +55,7 @@ footer{
 
 .navbar__list {
     display: flex;
-    gap: 40px;
+    gap: 60px;
 }
 
 .buscador {
@@ -63,16 +63,11 @@ footer{
     font-size: 70%;
 }
 
-.galeria {
-    display: flex;
-    background-size: 100vh;
-}
-
 .navbar__list li a:hover{
-    padding: 4px;
+    padding: 10px;
     background: #fff;
     color: black;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .contactenos {
@@ -83,4 +78,31 @@ footer{
 .derechos {
     display: flex;
     justify-content: center;
+}
+
+.galeria__contenedor {
+    
+    display: grid;
+    
+    justify-items: center;
+    align-items: center;
+
+}
+
+.galeria__images {
+    display: grid;
+
+    padding: 30px;
+    grid-gap: 40px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+}
+
+.galeria__images img{
+
+    height: 300px;
+    
+    width: 300px;
+    
+    object-fit: cover;
 }
