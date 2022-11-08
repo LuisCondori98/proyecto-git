@@ -4,39 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <title>Inicio</title>
 </head>
 <body>
-    <header class="header">
-        <img class="header__logo" src="./images/logo.png" alt="logo">
+    <header>
+        <div class="logo__contenedor">
+        <img class="logo" src="./img/logo.png" alt="">
+        </div>
+        <nav class="navbar">
+        <ul class="navbar__lista">
+            <li><a class="active" href="./index.html">Inicio</a></li>
+            <li><a href="./pages/productos.html">Productos</a></li>
+            <li><a href="./pages/preguntas-frecuentes.html">Preg Frecuentes</a></li>
+            <li><a href="./pages/blog.html">blog</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
     </header>
-
-    <nav class="navbar">
-        <img class="logo" src="./images/logo_label.png" alt="">
-        <ul class="navbar__list">
+    <main class="contenedor__galeria">
+        <h1>Venta de ropa para nene y nenas al por mayor y menor</h1>
+        <div class="galeria">
+            <img src="./img/imagen10.jpg" alt="">
+            <img src="./img/imagen11.jpg" alt="">
+            <img src="./img/imagen12.jpg" alt="">
+        </div>
+        <div class="galeria">
+            <img src="./img/imagen13.jpg" alt="">
+            <img src="./img/imagen14.jpg" alt="">
+            <img src="./img/imagen15.jpg" alt="">
+        </div>
+        <div class="galeria">
+            <img src="./img//imagen17.jpg" alt="">
+        </div>
+    </main>
+    <footer>
+        <div>
+        <ul class="footer__enlaces">
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./pages/productos.html">Productos</a></li>
             <li><a href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-            <li><a href="./pages/blog.html">Blog</a></li>
             <li><a href="./pages/contacto.html">Contacto</a></li>
         </ul>
-    </nav>
-
-    <main>
-        <section class="galeria__contenedor">
-            <ul class="galeria__images">
-                <li><img src="./images/imagen.jpg" alt=""></li>
-                <li><img src="./images/imagen10.jpg" alt="" class="foto"></li>
-                <li><img src="./images/imagen11.jpg" alt="" class="foto"></li>
-                <li><img src="./images/imagen12.jpg" alt="" class="foto"></li>
-                <li><img src="./images/imagen13.jpg" alt="" class="foto"></li>
-                <li><img src="./images/imagen14.jpg" alt="" class="foto"></li>
-                <li><img src="./images/imagen15.jpg" alt="" class="foto"></li>
-                <li><img src="./images/imagen17.jpg" alt="" class="foto"></li>
-                <li><img src="./images/imagen2.png" alt="" class="foto"></li>
-            </ul>
-        </section>
-    </main>
+        </div>
+        <div>
+            <label for="">Siguenos en nuestras redes:</label>
+            <ul class="socialIcons">
+                <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100064076322918" target="_blank"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
+                <li class="instagram"><a href="https://www.instagram.com/byluan49/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
+                <li class="whatsapp"><a href="https://walink.co/52c0a5" target="_blank"><i class="fa fa-fw fa-whatsapp"></i>Whatsapp</a></li>
+              </ul>
+              <label for="">info.byluan@gmail.com</label>
+        </div>
+        <div>
+            <label for="derechos">Todos los derechos reservados © - Hecho por Luis Condori</label>
+        </div>
+    </footer>
 </body>
 </html>

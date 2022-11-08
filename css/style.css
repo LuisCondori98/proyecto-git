@@ -1,198 +1,311 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
-    color: azure;
     text-decoration: none;
+    color: azure;
 }
 
 ul,
-ol {
+li {
     list-style: none;
 }
 
-header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+nav {
+    background-color:firebrick;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background: url(../images/fondo.jpg) no-repeat;
-    /*background-size: cover;
-    background-position: center;*/
+    background-color:rgba(227, 210, 133, 0.905);
 }
 
-.header__logo {
-    width: 180px;
-    height: 180px;
+footer {
+    background-color:black;
 }
 
-.logo {
-    height: 50px;
+.footer__enlaces li a:hover {
+    color:crimson;
 }
 
-.navbar{
+h1 {
+    padding: 30px;
+    background-color: hsla(12, 83%, 20%, 0.878);
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
-    align-items: center;
-    font-size: 120%;
+    justify-content: center;
+}
+
+.logo__contenedor{
+    height: 25vh;
     padding: 7px;
-    background-color: rgb(194, 68, 26);
-    
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+.navbar  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  
+.navbar li a:hover {
+    background-color:white;
+    color: black;
+    font-size: 16px;
+    border-radius: 20px;
+}
+  
+.navbar__lista {
+    display: flex;
+    justify-content: center;
+    font-family: "Sofia", sans-serif;
+    gap: 40px;
+}
+
+.contenedor__galeria {
+    padding: 20px;
+    background-image: url(../img/fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galeria{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 40px;
+}
+
+.galeria img {
+    width: 20%;
+    border-radius: 50%;
+    height: auto;
+}
+
+.galeria img:hover {
+    transition:all .5s ease-in-out;
+    box-shadow: 0 0 2px 2px white;
+    filter:grayscale(35%);
+}
+
+.footer__enlaces {
+    padding: 17px;
+    line-height: 30px;
+}
+
+.contenedor__main {
+    padding: 30px;
+}
+
+.grid__container {
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-columns: 400px 400px 400px;
+}
+  
+.grid__container div {
+    display: grid;
+    align-content: center;
+   justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid__container img {
+    width: 300px;
+    height: auto;
+}
+  
+div label{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+}
+
+/*  ==================================
+    ICONOS FACEBOOK INSTAGRAM WHATSAPP 
+    ================================== */
+
+ul.socialIcons {
+    padding: 0;
+    text-align: center;
+}
+  
+.socialIcons li {
+    background-color: yellow;
+    list-style: none;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 2em;
+    overflow: hidden;
+}
+  
+.socialIcons li a {
+    display: block;
+    padding: 0.5em;
+    min-width: 2.2em;
+    max-width: 2.2em;
+    white-space: nowrap;
+    line-height: 1.5em; /*it's working only when you write text with icon*/
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+}
+  
+.socialIcons li i {
+    margin-right: 0.5em;
+}
+  
+.socialIcons li:hover a {
+    max-width: 200px;
+    padding-right: 1em;
+}
+  
+.socialIcons .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+}
+  
+.socialIcons .instagram {
+    background-color: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+}
+  
+.socialIcons .whatsapp {
+    background-color: #15f630b8;
+    box-shadow: 0 0 16px #15f630b8;
+}
+
+/* =========================
+   ======= FIN ICONOS ======
+   =========================*/
+
+.iconos__contenedor {
+    background-color: gold;
+    border-radius: 80px;
+}
+
+.iconos {
     display: flex;
     justify-content: space-around;
-
 }
 
-.navbar__list {
+.texto__iconos{
     display: flex;
-    gap: 60px;
+    justify-content: space-around;
+    color: black;
 }
 
-.buscador {
-    border-radius: 5px;
-    font-size: 70%;
-}
+/*
+========================
 
-.contactenos {
-    display: flex;
-    justify-content: space-between
-}
 
-.derechos {
-    display: flex;
-    justify-content: center;
-}
+*/
 
-.galeria__contenedor {
-    
-    display: grid;
-    
-    justify-items: center;
-    align-items: center;
 
-}
+.container {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color:#cd486b;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
 
-.galeria__images {
-    display: grid;
+  .container:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 
-    padding: 30px;
-    grid-gap: 40px;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px;
-}
+@media (max-width: 768px) {
 
-.galeria__images img{
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 
-    height: 300px;
-    
-    width: 300px;
-    
-    object-fit: cover;
-}
+    .galeria img {
+        border-radius: 50%;
+        width: 220px;
+    }
 
-.contenedor__ubicacion {
-    display: flex;
-    padding: 20px;
-    background-color: white;
-}
-
-.ubicacion {
-    padding: 50px;
-    justify-content: center;
-    align-content: center;
-}
-
-.ubicacion img {
-    padding: 20px;
-
-    height: 400px;
-    
-    width: 400px;
-    
-    object-fit: cover;
-}
-
-@media (max-width: 767px) {
-    
-    body{
-        background: url(../images/fondo.jpg);
+    .contenedor__galeria {
+        background-image: url(../img/fondo.webp);
+        background-size: cover;
+        background-attachment: fixed;
         background-size: cover;
     }
 
-    .header__logo {
-        width: 90px;
-        height: 90px;
-    }
-
-    .logo {
-        height: 30px;
-    }
-
-    .galeria__images{
+    .footer__enlaces {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .foto {
-        width: 90%;
-        height: 30vh;
+    .iconos__contenedor {
+        background-color: gold;
+        border-radius: 80px;
+        background-size: 5px;
     }
-
-    .navbar{
+    
+    .iconos {
         display: flex;
-        align-items: center;
-        background-size: cover;
-        
+        justify-content: space-around;
+        height: 55px;
+    }
+    
+    .texto__iconos{
         display: flex;
         justify-content: space-around;
     }
-    
-    .navbar__list {
-        display: flex;
-        font-size: 8px;
-        padding: 0 8px;
-        background-size: cover;
+
+    .texto__iconos label{
+        color: black;
     }
 
-    .contenedor__ubicacion {
-        padding: 5px;
-        background-color: white;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-    
-    .contenedor__ubicacion h2{
-        font-size: 15px;
-    }
 
-    .ubicacion {
-        padding: 50px;
-    }
-    
-    .ubicacion img {
-        padding: 20px;
-    
-        height: 200px;
-        
-        width: 200px;
-        
-        object-fit: cover;
-    }
 
-    .ubicacion iframe {
-        height: 300px;
-        
-        width: 300px;
-    }
+
+    
 }
