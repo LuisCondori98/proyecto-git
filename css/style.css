@@ -468,7 +468,7 @@ ul.socialIcons {
 
 
     .iconos__contenedor {
-        background-color: rgba(211, 192, 22, 0.723);
+        background-color: rgba(36, 36, 36, 0.692);
         border-radius: 15px;
         background-size: 5px;
         height: 120px;
@@ -481,7 +481,7 @@ ul.socialIcons {
     }
 
     .texto__iconos label{
-        color: black;
+        color: white;
         font-size: small;
     }
 
