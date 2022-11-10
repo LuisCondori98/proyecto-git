@@ -377,6 +377,38 @@ ul.socialIcons {
 
 @media (max-width: 768px) {
 
+    h1 {
+        padding: 10px;
+        background-color: rgba(243, 239, 130, 0.815);
+        color:white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        font-size: small;
+    }
+
+    /* ===================================================
+    ================== LOGO =========================== 
+    =================================================== */
+
+    .logo__contenedor{
+        height: 15vh;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+    }
+    /* ===================================================
+    =================================================== */
+
+    .gif__saladita {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        height: 290px;
+        width: auto;
+    }
+
     .navbar__lista {
         display: flex;
         justify-content: center;
