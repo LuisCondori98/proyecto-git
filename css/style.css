@@ -386,12 +386,12 @@ ul.socialIcons {
 
     h1 {
         padding: 10px;
-        background-color: rgba(243, 239, 130, 0.815);
+        background-color: rgba(168, 37, 26, 0.666);
         color:white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         display: flex;
         justify-content: center;
-        font-size: small;
+        font-size:x-large;
     }
 
     /* BARRA DE NAVEGACION */
@@ -609,7 +609,7 @@ ul.socialIcons {
     }
 
     .contenedor__img {
-        padding: 20px;
+        padding: 10px;
     }
 
     .grid__container {
@@ -631,13 +631,14 @@ ul.socialIcons {
     
     .iconos {
         display: flex;
-        justify-content: space-around;
+        justify-content:space-around;
         height: 57px;
     }
 
-    .texto__iconos label{
+    .texto__iconos{
         color: white;
-        font-size: small;
+        font-size: 13px;
+        justify-content:space-evenly;
     }
 
     /* ========================================================
