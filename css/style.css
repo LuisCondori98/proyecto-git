@@ -23,12 +23,12 @@ body {
 }
 
 footer {
-    background-image: linear-gradient(215deg, #536982 0, #4e677d 5.56%, #4a6477 11.11%, #476170 16.67%, #445c67 22.22%, #43575e 27.78%, #425155 33.33%, #414a4b 38.89%, #404242 44.44%, #3e3939 50%, #3c3031 55.56%, #39282c 61.11%, #362128 66.67%, #321b26 72.22%, #2e1624 77.78%, #2a1224 83.33%, #260e24 88.89%, #210c25 94.44%, #1c0a27 100%);
+    background-image: radial-gradient(circle at 17.29% 47.14%, #3a3b3d 0, #353534 12.5%, #2c2c29 25%, #20211a 37.5%, #101403 50%, #000000 62.5%, #000000 75%, #000000 87.5%, #000000 100%);
 }
 
 h1 {
     padding: 30px;
-    background-color: rgba(243, 239, 130, 0.815);
+    background-color: rgba(168, 37, 26, 0.666);
     color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
@@ -104,6 +104,11 @@ h1 {
     width: auto;
 }
 
+.gif__saladita img {
+    padding: 10px;
+    background-color: white;
+}
+
 .contenedor__galeria {
     padding: 20px;
     background-image: url(../img/fondo.webp);
@@ -150,7 +155,7 @@ h1 {
 }
 
 .contenedor__img {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.858);
     border-radius: 15px;
     gap: 10px;
 }
@@ -204,12 +209,14 @@ div label{
 
 .iconos__contenedor {
     background-color: rgba(36, 36, 36, 0.692);
+    border-color: white;
+    border-style:groove;
     border-radius: 80px;
 }
 
 .iconos {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     height: 55px;
 }
 
@@ -270,14 +277,15 @@ div label{
 }
 
 .contacto__galeria {
-    background-color: rgba(0, 0, 0, 0.7987);
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     padding: 15px;
     gap: 30px;
 }
 
 .contacto__galeria img{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
     width: 30%;
 }
 
@@ -287,7 +295,12 @@ div label{
     padding: 15px;
 }
 
-.contenedor__cg label{
+.local__ubicacion iframe {
+    background-color: rgba(0, 0, 0, 0.673);
+    padding: 15px;
+}
+
+.contenedor__cg .titulo{
     background-color: hsla(12, 83%, 20%, 0.700);
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -295,6 +308,7 @@ div label{
     justify-content: center;
     padding: 40px;
 }
+
 /* ================================================================================================
    ================================================================================================
 
@@ -303,17 +317,6 @@ div label{
    ================================================================================================
                                              FOOTER  
    ================================================================================================ */
-
-.footer__enlaces li a:hover {
-    color:#ff0000;
-    text-decoration-line: underline;
-}
-
-.footer__enlaces {
-    font-size: 17px;
-    padding: 17px;
-    line-height: 30px;
-}
 
 /* ==============================================================
    =========== ICONOS FACEBOOK INSTAGRAM WHATSAPP =============== 
@@ -650,11 +653,5 @@ ul.socialIcons {
     .contacto__galeria img{
         height: 90%;
         width: 80%;
-    }
-
-    .footer__enlaces {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }
